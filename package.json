@@ -4,13 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "test": "echo \"No tests yet\" && exit 0",
-  "lint": "eslint .",
-  "format": "prettier --write .",
-  "format:check": "prettier --check .",
-  "build": "echo \"Build OK\""
-},
-
+    "test": "echo \"No tests yet\" && exit 0",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "build": "echo \"Build OK\""
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/celier-choque/ci-project.git"
