@@ -17,12 +17,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/celier-choque/ci-project/issues"
   },
   "homepage": "https://github.com/celier-choque/ci-project#readme",
   "devDependencies": {
+    "@eslint/js": "^9.39.4",
     "eslint": "^9.39.4",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
