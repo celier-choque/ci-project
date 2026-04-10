@@ -29,3 +29,21 @@ pre-push: ejecuta npm test
 
 PASO 7 - GitHub Actions configurado en .github/workflows/ci.yml
 Pipeline incluye: lint, format check, tests, build
+
+PROBLEMAS ENCONTRADOS Y SOLUCIONES
+===================================
+
+PROBLEMA 1 - Prettier: archivos sin formatear
+  Error: "Code style issues found in 5 files"
+  Causa: Los archivos no cumplian el formato definido en .prettierrc
+  Solución: Ejecutar "npm run format" para auto-formatear y subir cambios
+
+PROBLEMA 2 - ESLint: archivo de configuración no reconocido
+  Error: "ESLint couldn't find an eslint.config.(js|mjs|cjs) file"
+  Causa: Se instaló ESLint v9 que ya no acepta .eslintrc.json
+  Solución: Migrar a eslint.config.js con el nuevo formato de ESLint v9
+            e instalar la dependencia @eslint/js
+
+OBSERVACIONES GENERALES
+========================
+- El pipeline de CI corre automaticamente en cada push a main
