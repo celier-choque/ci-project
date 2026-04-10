@@ -1,0 +1,40 @@
+{
+  "name": "ci-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "test": "echo \"No tests yet\" && exit 0",
+  "lint": "eslint .",
+  "format": "prettier --write .",
+  "format:check": "prettier --check .",
+  "build": "echo \"Build OK\""
+},
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/celier-choque/ci-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/celier-choque/ci-project/issues"
+  },
+  "homepage": "https://github.com/celier-choque/ci-project#readme",
+  "devDependencies": {
+    "eslint": "^9.39.4",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "husky": "^8.0.0",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.8.2"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
+}

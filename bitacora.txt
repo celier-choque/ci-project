@@ -1,0 +1,31 @@
+BITÁCORA - PREPARACIÓN DE INFRAESTRUCTURA CI
+=============================================
+Alumno: Celier Jaime Choque Choue
+
+PASO 1 - Extensiones VS Code instaladas:
+- ESLint
+- Prettier
+- SonarQube for IDE
+- Jest
+- Error Lens
+- GitLens
+- Docker
+
+PASO 2 - Repositorio GitHub creado:
+URL: https://github.com/celier-choque/ci-project.git
+
+PASO 3 - Proyecto inicializado con npm init -y
+
+PASO 4 - Dependencias instaladas:
+eslint, prettier, eslint-config-prettier,
+eslint-plugin-prettier, husky, lint-staged
+
+PASO 5 - Archivos de configuración creados:
+.prettierrc, .eslintrc.json
+
+PASO 6 - Husky configurado:
+pre-commit: ejecuta lint-staged
+pre-push: ejecuta npm test
+
+PASO 7 - GitHub Actions configurado en .github/workflows/ci.yml
+Pipeline incluye: lint, format check, tests, build
